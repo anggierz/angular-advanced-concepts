@@ -1,36 +1,27 @@
-<div>
-    <h1>Alta Usuario</h1>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <div>
-            <label for="name">Nombre</label>
-            <input id="name" formControlName="name" type="text" placeholder="Nombre" required />
+<div class="container">
+  <h1>Alta Usuario</h1>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="name">Nombre</label>
+    <input id="name" formControlName="name" type="text" placeholder="Nombre" required />
 
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input id="email" formControlName="email" type="email" placeholder="Email" required />
-        </div>
-        <div>
-            <label for="city">Ciudad</label>
-            <input id="city" formControlName="city" type="text" placeholder="Ciudad" required />
-        </div>
-        <div>
-            <label for="country">Pais</label>
-            <input id="country" formControlName="country" type="text" placeholder="Pais" required />
-        </div>
-        <div>
-            <label for="phone">Telefono</label>
-            <input id="phone" formControlName="phone" type="tel" placeholder="Telefono" required />
-        </div>
-        <div>
-            <label for="company">Empresa</label>
-            <input id="company" formControlName="company" type="text" placeholder="Empresa" required />
-        </div>
-        <div>
-            <label for="age">Edad</label>
-            <input id="age" formControlName="age" type="number" placeholder="Edad" required />
-        </div>
-        <button type="submit">Alta</button>
-    </form>
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" placeholder="Email" required />
 
+    <label for="city">Ciudad</label>
+    <input id="city" formControlName="city" type="text" placeholder="Ciudad" required />
+
+    <label for="country">País</label>
+    <input id="country" formControlName="country" type="text" placeholder="País" required />
+
+    <label for="phone">Teléfono</label>
+    <input id="phone" formControlName="phone" type="tel" placeholder="Teléfono" required />
+
+    <label for="company">Empresa</label>
+    <input id="company" formControlName="company" type="text" placeholder="Empresa" required />
+
+    <label for="age">Edad</label>
+    <input id="age" formControlName="age" type="number" placeholder="Edad" required />
+
+    <button type="submit">Alta</button>
+  </form>
 </div>
