@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr [ngStyle]="changeStyle ? { color: 'red', 'font-size': '20px' } : {}">
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Ciudad</th>
+      <th *ngIf="!doShowOrHide">Pais</th>
+      <th *ngIf="!doShowOrHide">Telefono</th>
+      <th *ngIf="doShowOrHide">Empresa</th>
+      <th *ngIf="doShowOrHide">Edad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of data">
+      <td>{{ user.id }}</td>
+      <td>{{ user.nombre }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.ciudad }}</td>
+      <td *ngIf="!doShowOrHide">{{ user.pais }}</td>
+      <td *ngIf="!doShowOrHide">{{ user.telefono }}</td>
+      <td *ngIf="doShowOrHide">{{ user.empresa }}</td>
+      <td *ngIf="doShowOrHide">{{ user.edad }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="showHideColumns()">Mostrar/quitar columnas y cambiar estilo</button>
