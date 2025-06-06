@@ -24,7 +24,7 @@ export class FormComponent {
 
   public onSubmit() {
     if (this.form.valid) {
-      console.log('Form Submitted!', this.form.value);
+      console.log('Form Successfully submitted!', this.form.value);
       alert('Usuario creado correctamente');
       this.resetForm();
     } else {
